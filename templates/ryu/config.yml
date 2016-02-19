@@ -1,0 +1,8 @@
+name: Ryu
+description: |
+  URL Config Tool
+version: 0.1.0
+category: Tools
+maintainer: sneha.singh@am.sony.com
+license: Commercial
+projectURL: https://github.snei.sony.com/SNEI/ryu

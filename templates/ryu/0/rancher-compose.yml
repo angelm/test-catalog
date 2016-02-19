@@ -1,0 +1,42 @@
+.catalog:
+  name: Ryu
+  version: 0.1.0
+  description: Ryu - URL Config Tool
+  uuid: ryu-0.1.0
+  minimum_rancher_version: v0.51.0
+  questions:
+    - variable: "NODE_ENV"
+      type: "enum"
+      required: true
+      options:
+        - production
+        - development
+      default: "development"
+      label: "Environment"
+      description: "The environment [production | development] under which to run the app."
+    - variable: "RYU_HOST_NAME"
+      type: "string"
+      required: true
+      label: "Host"
+      description: "The name of host for the service."
+    - variable: "RYU_PORT_NUMBER"
+      type: "int"
+      required: true
+      default: 4200
+      label: "Port"
+      description: "The port the service will use."
+    - variable: "RYU_CLIENT_ID"
+      type: "string"
+      required: true
+      label: "App Client Id"
+      description: "The GitHub client id for the app."
+    - variable: "RYU_CLIENT_SECRET"
+      type: "password"
+      required: true
+      label: "App Secret"
+      description: "The GitHub secret for the app."
+    - variable: "RYU_CONFIG_REPO"
+      type: "string"
+      required: true
+      label: "PS4 Configuration Repo"
+      description: "The URL for the repository containing the URL configuration to work with."
